@@ -30,7 +30,7 @@ export default async function Home() {
       <Brand />
       <Popular/>
       <Benefit />
-      <Touch />
+      <Touch/>
     </>
   );
 }

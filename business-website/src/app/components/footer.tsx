@@ -95,7 +95,7 @@ const Footer = () => {
 </li>
           <li>
   <Link 
-    href="/" 
+    href="/all" 
     style={{
       fontFamily: 'Satoshi',
       fontSize: '14px',
@@ -127,7 +127,7 @@ const Footer = () => {
     textDecorationSkipInk: 'none'
   }}
 >
-  Categories
+  Popular Categories
 </h1>
           <ul className="space-y-2 text-white mb-4">
           <li>
@@ -143,7 +143,7 @@ const Footer = () => {
       textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
     }}
   >
-    Crockery
+    Decor
   </Link>
 </li>
           <li>
@@ -175,7 +175,7 @@ const Footer = () => {
       textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
     }}
   >
-    Homeware
+    Tableware
   </Link>
 </li>
           <li>
@@ -191,7 +191,7 @@ const Footer = () => {
       textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
     }}
   >
-    Plant pots
+    Entertainment
   </Link>
 </li>
           <li>
@@ -207,7 +207,7 @@ const Footer = () => {
       textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
     }}
   >
-    Chairs
+    Supplies
   </Link>
 </li>
             
@@ -248,25 +248,10 @@ const Footer = () => {
     About us
   </Link>
 </li>
+          
           <li>
   <Link 
-    href="/" 
-    style={{
-      fontFamily: 'Satoshi',
-      fontSize: '14px',
-      fontWeight: '400',
-      lineHeight: '18.9px',
-      textAlign: 'left',
-      // textDecoration: 'underline', // This will apply the underline
-      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
-    }}
-  >
-    Vacancies
-  </Link>
-</li>
-          <li>
-  <Link 
-    href="/" 
+    href="/contact" 
     style={{
       fontFamily: 'Satoshi',
       fontSize: '14px',
@@ -280,6 +265,7 @@ const Footer = () => {
     Contact us
   </Link>
 </li>
+          
           <li>
   <Link 
     href="/" 
@@ -293,23 +279,7 @@ const Footer = () => {
       textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
     }}
   >
-    Privacy
-  </Link>
-</li>
-          <li>
-  <Link 
-    href="/" 
-    style={{
-      fontFamily: 'Satoshi',
-      fontSize: '14px',
-      fontWeight: '400',
-      lineHeight: '18.9px',
-      textAlign: 'left',
-      // textDecoration: 'underline', // This will apply the underline
-      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
-    }}
-  >
-    Return policy
+    Retal policy
   </Link>
 </li>
           </ul>

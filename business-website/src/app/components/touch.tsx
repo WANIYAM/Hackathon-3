@@ -8,18 +8,18 @@ const Touch = () => {
         <div className="py-12 text-[#2A254B] mt-12">
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-[720px] h-auto px-4 md:px-12 py-8 flex flex-col justify-between">
-              <div>
+            <div>
                 <h1 className="text-2xl md:text-2xl">
-                  From a studio in London to a global brand with <br /> over 400 outlets
+                  From a small idea to <br /> event essentials for every occasion
                 </h1>
                 <h1 className="py-6 text-lg md:text-xl">
-                  When we started Avion, the idea was simple. Make high-quality furniture <br />
-                  affordable and available for the mass market.
+                  When we started Eventique Events, the idea was simple. Make high-quality event and party essentials <br />
+                  affordable and available for everyone.
                 </h1>
                 <h1 className="text-base md:text-lg">
-                  Handmade and lovingly crafted furniture and homeware is what we live, <br />
-                  breathe, and design, so our Chelsea boutique became the hotbed for the <br />
-                  London interior design community.
+                  Carefully curated and thoughtfully designed event essentials are what we live, <br />
+                  breathe, and create, making our boutique the go-to place for the <br />
+                  global event planning community.
                 </h1>
               </div>
               <div className="my-10">
@@ -31,7 +31,7 @@ const Touch = () => {
 
             <div className="w-full md:w-[890px] h-auto">
               <Image
-                src={'/images/blend.png'}
+                src={'/images/event.jpg'}
                 height={800}
                 width={800}
                 alt="chair"
