@@ -1,12 +1,9 @@
 'use client';
 import React, { useState } from 'react';
 import { CiSearch } from 'react-icons/ci';
-import { IoCartOutline } from 'react-icons/io5';
-import { IoIosContact } from 'react-icons/io';
 import { IoMenu, IoClose } from 'react-icons/io5';
 import Link from 'next/link';
 import { useShoppingCart } from 'use-shopping-cart';
-import { usePathname } from 'next/navigation';
 import { Button } from '../../../components/ui/button';
 import { ShoppingBag } from 'lucide-react';
 
@@ -14,9 +11,6 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-  const [profileOpen, setProfileOpen] = useState(false); // For profile dropdown
-  const isAuthenticated = false; // Replace with actual auth logic
-  const pathname = usePathname();
   const { handleCartClick } = useShoppingCart();
 
   const toggleMenu = () => {
@@ -27,9 +21,7 @@ const Navbar = () => {
     setSearchOpen(!searchOpen);
   };
 
-  const toggleProfile = () => {
-    setProfileOpen(!profileOpen);
-  };
+ 
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -39,10 +31,7 @@ const Navbar = () => {
     setSearchOpen(false);
   };
 
-  const handleLogout = () => {
-    console.log('User logged out');
-    // Implement logout functionality
-  };
+  
 
   return (
     <div className="p-4 w-full h-auto">

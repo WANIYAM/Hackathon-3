@@ -6,7 +6,6 @@ import { Star, Truck } from "lucide-react";
 import React from "react";
 import { Button } from "../../../../components/ui/button";
 import ImageGallery from "@/app/components/ImageGallery";
-import product from "@/app/components/popular";
 
 async function getData(slug: string) {
     const query = `*[_type == "product" && slug.current == "${slug}"][0] {

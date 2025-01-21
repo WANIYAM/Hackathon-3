@@ -2,7 +2,6 @@
 
 import { useShoppingCart } from "use-shopping-cart";
 import { urlFor } from "@/sanity/lib/image";
-import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import { Button } from "../../../components/ui/button";
 import { ProductCart } from "./AddToBag";
 

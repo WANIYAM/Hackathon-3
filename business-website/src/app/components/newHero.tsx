@@ -1,17 +1,40 @@
+"use client"
+
 import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';
-import Image from "next/image"
-import React from 'react'
+import Image from "next/image";
+import React, { useEffect, useState } from 'react';
 
-async function getData() {
-  const query = "*[_type == 'heroImage'][0]"
+// Define the data structure
+interface HeroImageData {
+  image: {
+    asset: {
+      _ref: string;
+      _type: string;
+    };
+  };
+}
+
+async function getData(): Promise<HeroImageData> {
+  const query = "*[_type == 'heroImage'][0]";
   const data = await client.fetch(query);
-  // console.log("Fetched Data:", data);
   return data;
 }
 
-export default async function NewHero() {
-  const data = await getData();
+export default function NewHero() {
+  const [data, setData] = useState<HeroImageData | null>(null);
+
+  useEffect(() => {
+    async function fetchData() {
+      const fetchedData = await getData();
+      setData(fetchedData);
+    }
+    fetchData();
+  }, []);
+
+  if (!data) {
+    return <div>Loading...</div>; // Add a loading state
+  }
 
   return (
     <section className="text-gray-600 body-font border shadow-lg rounded-lg">
@@ -21,7 +44,7 @@ export default async function NewHero() {
             Elegant Event Furniture for Every Occasion
           </h1>
           <p className="mb-8 leading-relaxed">
-            Transform your event with our beautifully decorated chairs and tables, designed to enhance any setting. Whether you're hosting a wedding, corporate gathering, or private celebration, choose from our exclusive collection of rental and purchase options to suit your needs.
+            Transform your event with our beautifully decorated chairs and tables, designed to enhance any setting. Whether you&apos;re hosting a wedding, corporate gathering, or private celebration, choose from our exclusive collection of rental and purchase options to suit your needs.
           </p>
           <div className="flex justify-center">
             <button className="inline-flex text-white bg-indigo-900 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
@@ -45,3 +68,5 @@ export default async function NewHero() {
     </section>
   );
 }
+
+

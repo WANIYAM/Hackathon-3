@@ -2,7 +2,6 @@
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image"
 import { useState } from "react";
-import Navbar from "./navbar";
 
 interface iAppProps{
     images:string[]

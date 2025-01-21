@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import Hero from "./components/hero";
 import Brand from "./components/brand";
 // import Ceramics from "./components/ceramics";
 // import Product from "./components/popular"
@@ -27,11 +26,8 @@ export default async function Home() {
   return (
     <>
       <Navbar />
-      {/* <Hero /> */}
       <NewHero/>
       <Brand />
-      {/* <Ceramics /> */}
-      {/* <Product /> */}
       <Popular/>
       <Benefit />
       <Touch />
