@@ -4,14 +4,9 @@ import React, { useState } from 'react';
 import Navbar from '../components/navbar';
 
 const Contact: React.FC = () => {
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [isPopupVisible] = useState(false);
 
-  const handleButtonClick = () => {
-    setIsPopupVisible(true);
-    setTimeout(() => {
-      setIsPopupVisible(false);
-    }, 3000); // Popup disappears after 3 seconds
-  };
+ 
   return (
     <><Navbar />
     <section className="text-gray-600 body-font relative">

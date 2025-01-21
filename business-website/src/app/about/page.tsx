@@ -28,12 +28,13 @@ const About = () => {
         {/* Story Section */}
         <div className="  flex flex-col md:flex-row w-full h-auto items-center justify-around px-4 py-16">
           <div className="border-2 bg-slate-200 w-full md:w-3/5 p-8 md:p-20">
-            <h1 className="text-xl md:text-2xl">A new vision for unforgettable events</h1>
-            <p className="mt-6">
-              Born out of a passion for creating memorable events, we started our journey in 2023 with a mission to
-              provide high-quality event essentials for every occasion. Whether you're planning a party, wedding, or
-              corporate event, we offer an extensive range of premium products that you can either purchase or rent.
-            </p>
+          <h1 className="text-xl md:text-2xl">A new vision for unforgettable events</h1>
+<p className="mt-6">
+  Born out of a passion for creating memorable events, we started our journey in 2023 with a mission to
+  provide high-quality event essentials for every occasion. Whether you&apos;re planning a party, wedding, or
+  corporate event, we offer an extensive range of premium products that you can either purchase or rent.
+</p>
+
             <Link href="/">
               <button className="bg-input-bg h-12 w-40 rounded-sm mt-10 text-gray-950">
                 Explore Our Rentals & Purchases
@@ -64,10 +65,11 @@ const About = () => {
               Making every event extraordinary with top-tier rentals and products
             </h1>
             <p className="text-custom-purple mt-6">
-              Whether you're renting or buying, we provide the highest quality event essentials. From stylish tables,
-              chairs, and linens to elegant lighting and decor, our products add a touch of luxury to your event, while
-              our rental options offer you flexibility without compromising on style.
-            </p>
+  Whether you&apos;re renting or buying, we provide the highest quality event essentials. From stylish tables,
+  chairs, and linens to elegant lighting and decor, our products add a touch of luxury to your event, while
+  our rental options offer you flexibility without compromising on style.
+</p>
+
             <Link href="/contact">
               <button className="bg-white h-12 w-40 rounded-sm mt-10 text-custom-purple">Contact Us</button>
             </Link>
